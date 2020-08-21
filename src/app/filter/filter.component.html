@@ -1,0 +1,20 @@
+<div id="filter" class="filter-container">
+  <div id="filter-title" class="title" [innerText]="title"></div>
+  <ul id="filter-list">
+    <li [id]="'filter-item' + i" *ngFor="let filter of filters; let i = index">
+      <label id="filter-label" class="label" [innerText]="filter.key"></label>
+      <div
+        [id]="'filter-type' + j"
+        (click)="apply(filter.type, value)"
+        class="type"
+        [ngClass]="
+          activeFilter.type === filter.type && activeFilter.value === value
+            ? 'active'
+            : 'inactive'
+        "
+        *ngFor="let value of filter.value; let j = index"
+        [innerText]="value"
+      ></div>
+    </li>
+  </ul>
+</div>

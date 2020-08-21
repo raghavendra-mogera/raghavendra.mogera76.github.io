@@ -1,0 +1,90 @@
+/*
+ * File: program.component.scss
+ * Project: spacex
+ * -----
+ * Copyright © 2020
+ * Written By Raghavendra.
+ */
+
+@import "../../assets/sass/variables";
+@import '../../assets/sass/mixins';
+:host {
+  width: 80%;
+}
+
+.program-container > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.program-container ul .program-item {
+  background: $white;
+  border-radius: 5px;
+  width: 24%;
+  display: inline-block;
+  margin-right: 1%;
+  margin-bottom: 10px;
+}
+
+.program-container ul .program-item .program-item-container {
+  padding: 10px;
+}
+
+.program-container ul .program-item img {
+  width: 100%;
+  background: #e6ecff;
+}
+
+.label-style {
+  font-size: 15px;
+  font-family: $font-family-bold, sans-serif;
+  margin: 5px 0;
+  color: $black;
+}
+
+.value-style {
+  font-size: 12px;
+  font-family: $font-family-regular, sans-serif;
+  margin: 0;
+  color: #0040ff;
+}
+
+.program-container ul .program-item .mission-name {
+  @extend .label-style;
+  color: #0040ff;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.program-container ul .program-item .mission-list{
+  list-style-type: disc;
+  height:  30px;
+  overflow-y: auto;
+  @include scrollbars(5px, #c5c5c5, #ffffff);
+}
+
+.program-container ul .program-item .mission-detail > div {
+  display: inline-block;
+}
+
+@media (max-width: 1024px) and (min-width: 700px) {
+  :host {
+    width: 66.66%;
+  }
+  .program-container ul .program-item {
+    width: 49%;
+  }
+}
+
+@media (max-width: 700px) {
+  :host {
+    width: 100%;
+  }
+  .program-container ul .program-item {
+    width: 100%;
+    margin-right: 0;
+  }
+}

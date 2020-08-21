@@ -1,0 +1,26 @@
+@import '../../assets/sass/variables';
+
+.spacex-container{
+    padding: 10px;
+    max-width: $app-max-width;
+    margin: auto;
+}
+
+.spacex-container h1{
+    padding: 0;
+    font-size: 20px;
+    font-family: $font-family-bold, sans-serif;
+    margin: 0 0 50px;
+}
+
+
+.spacex-container .content{
+    display: flex;
+}
+
+@media (max-width: 700px) {
+    .spacex-container .content{
+        display: block;
+    }
+  }
+

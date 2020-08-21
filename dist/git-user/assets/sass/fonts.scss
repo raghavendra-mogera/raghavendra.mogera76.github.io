@@ -1,0 +1,12 @@
+@mixin font($font) {
+  @font-face {
+    font-family: $font;
+    src: url('~/assets/fonts/'+$font+'.ttf') format('truetype');
+  }
+}
+
+$fonts: 'NotoSans-Bold', 'NotoSans-Medium', 'NotoSans-Regular', 'NotoSans-SemiBold', 'NotoSans-Light', 'NotoSans-Italic';
+
+@each $font in $fonts {
+  @include font($font);
+}

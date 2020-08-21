@@ -1,0 +1,87 @@
+/*
+ * File: filter.component.scss
+ * Project: spacex
+ * -----
+ * Copyright © 2020
+ * Written By Raghavendra.
+ */
+
+@import "../../assets/sass/variables";
+
+:host {
+  width: 19%;
+  margin-right: 1%;
+}
+
+.filter-container {
+  background: $white;
+  border-radius: 10px;
+  padding: 10px 10px 30px;
+}
+
+.filter-container .title {
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-family: $font-family-bold, sans-serif;
+}
+
+.filter-container ul {
+  list-style-type: none;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.filter-container ul li {
+  display: block;
+  width: 100%;
+}
+
+.filter-container ul li label {
+  margin: 0 10px;
+  font-size: 12px;
+  text-align: center;
+  font-family: $font-family-medium, sans-serif;
+  border-bottom: 2px solid lightgray;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.filter-container ul li .type {
+  width: 40%;
+  font-size: 12px;
+  text-align: center;
+  font-family: $font-family-medium, sans-serif;
+  display: inline-block;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 10px 0px;
+  cursor: pointer;
+}
+
+.filter-container ul li .inactive{
+  background: #d9ffb3;
+}
+
+.filter-container ul li .active{
+  background: #33cc33;
+}
+
+.filter-container ul li .type:nth-child(even) {
+  margin-right: 10%;
+}
+
+.filter-container ul li .type:nth-child(odd) {
+  margin-left: 10%;
+}
+
+@media (max-width: 1024px) and (min-width: 700px) {
+  :host {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 700px) {
+  :host {
+    width: 100%;
+  }
+}

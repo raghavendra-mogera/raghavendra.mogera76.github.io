@@ -1,0 +1,110 @@
+{
+  "configVersion": 1,
+  "timestamp": 1598000070887,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.db2ce86b9a5868b057c8.js",
+        "/manifest.webmanifest",
+        "/polyfills.a4021de53358bb0fec14.js",
+        "/runtime.e227d1a0e31cbccbf8ec.js",
+        "/styles.0afcae8c2c4e0175aa0a.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/NotoSans-Bold.82b1a58ddf26951345dc.ttf",
+        "/NotoSans-Italic.08690ed789a5532ed7be.ttf",
+        "/NotoSans-Light.c9290d4cf465782379eb.ttf",
+        "/NotoSans-Medium.d230ef0486164f923991.ttf",
+        "/NotoSans-Regular.e962f548522aa99bb8f9.ttf",
+        "/NotoSans-SemiBold.a75c33f62863bf1248a7.ttf",
+        "/assets/fonts/NotoSans-Bold.ttf",
+        "/assets/fonts/NotoSans-Italic.ttf",
+        "/assets/fonts/NotoSans-Light.ttf",
+        "/assets/fonts/NotoSans-Medium.ttf",
+        "/assets/fonts/NotoSans-Regular.ttf",
+        "/assets/fonts/NotoSans-SemiBold.ttf",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/sass/_mixins.scss",
+        "/assets/sass/_variables.scss",
+        "/assets/sass/fonts.scss"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/NotoSans-Bold.82b1a58ddf26951345dc.ttf": "a063702bfcc720d5bfa1bba00706e0296ddf4523",
+    "/NotoSans-Italic.08690ed789a5532ed7be.ttf": "d82bb6d75645f745ae902c1db10e4ef3d8062437",
+    "/NotoSans-Light.c9290d4cf465782379eb.ttf": "b9bffad607421ac0f0c8223f3731c26abc30bd89",
+    "/NotoSans-Medium.d230ef0486164f923991.ttf": "b0e73a061b6a39e3dfd64aebd1626464c1e1696e",
+    "/NotoSans-Regular.e962f548522aa99bb8f9.ttf": "1a17c06f6feb06281dc9b524c24fcf05abb82c35",
+    "/NotoSans-SemiBold.a75c33f62863bf1248a7.ttf": "090a19da387041e7c3ca96d0625d8fa6583601df",
+    "/assets/fonts/NotoSans-Bold.ttf": "a063702bfcc720d5bfa1bba00706e0296ddf4523",
+    "/assets/fonts/NotoSans-Italic.ttf": "d82bb6d75645f745ae902c1db10e4ef3d8062437",
+    "/assets/fonts/NotoSans-Light.ttf": "b9bffad607421ac0f0c8223f3731c26abc30bd89",
+    "/assets/fonts/NotoSans-Medium.ttf": "b0e73a061b6a39e3dfd64aebd1626464c1e1696e",
+    "/assets/fonts/NotoSans-Regular.ttf": "1a17c06f6feb06281dc9b524c24fcf05abb82c35",
+    "/assets/fonts/NotoSans-SemiBold.ttf": "090a19da387041e7c3ca96d0625d8fa6583601df",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/sass/_mixins.scss": "d82130d5333832a584643200aaf35c4549e70074",
+    "/assets/sass/_variables.scss": "76c61d10fda009658bcab78a31bddff0547616ea",
+    "/assets/sass/fonts.scss": "82ba0eaeec0f7f304dfd1b41a28b9b0c4624747d",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/index.html": "02a288f4896b053b6221a077925f6c6394c3e554",
+    "/main.db2ce86b9a5868b057c8.js": "9cdfe933033b568a945b7e87f4bf9467670ccea6",
+    "/manifest.webmanifest": "f12f7a404cb4c5d57eccd137541523808dd37ab4",
+    "/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
+    "/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/styles.0afcae8c2c4e0175aa0a.css": "6435929ca2f787c10f5a82063f8e30f3182c527e"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

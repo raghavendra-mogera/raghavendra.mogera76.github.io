@@ -1,0 +1,31 @@
+<div id="program" class="program-container">
+    <ul id="program-list">
+        <li id="program-item" class="program-item" *ngFor="let program of programs; let i=index">
+            <div id="program-item-container" class="program-item-container">
+                <img id="mission-image" [src]="program.links.mission_patch_small" alt="error occurred" />
+                <div id="mission-name" [innerText]="program.mission_name" class="mission-name"></div>
+                <div id="mission-id-label" class="label-style" [innerText]="'Mission Ids'"></div>
+                <ul id="mission-id-list" class="mission-list">
+                    <ng-container *ngIf="program.mission_id.length>0; else noIds">
+                        <li id="mission-id" class="value-style" [innerText]="id" *ngFor="let id of program.mission_id; let j=index"></li>
+                    </ng-container>
+                    <ng-template #noIds>
+                        <li class="value-style">No ids available...</li>
+                      </ng-template>
+                </ul>
+                <div id="mission-detail" class="mission-detail">
+                    <div id="mission-key" class="label-style" [innerText]="'Launch Year: '"></div>
+                    <div id="mission-value" class="value-style" [innerText]="'&nbsp;&nbsp;&nbsp;'+program.launch_year"></div>
+                </div>
+                <div id="mission-detail" class="mission-detail">
+                    <div id="mission-key" class="label-style" [innerText]="'Successful Launch: '"></div>
+                    <div id="mission-value" class="value-style" [innerText]="program.launch_success ? '&nbsp;&nbsp;&nbsp;Yes' : '&nbsp;&nbsp;&nbsp;No'"></div>
+                </div>
+                <!-- <div id="mission-detail" class="mission-detail">
+                    <div id="mission-key" class="label-style" [innerText]="'Successful Landing: '"></div>
+                    <div id="mission-value" class="value-style" [innerText]="'false'"></div>
+                </div> -->
+            </div>
+        </li>
+    </ul>
+</div>
