@@ -21,10 +21,10 @@
                     <div id="mission-key" class="label-style" [innerText]="'Successful Launch: '"></div>
                     <div id="mission-value" class="value-style" [innerText]="program.launch_success ? '&nbsp;&nbsp;&nbsp;Yes' : '&nbsp;&nbsp;&nbsp;No'"></div>
                 </div>
-                <!-- <div id="mission-detail" class="mission-detail">
+                <div id="mission-detail" class="mission-detail">
                     <div id="mission-key" class="label-style" [innerText]="'Successful Landing: '"></div>
-                    <div id="mission-value" class="value-style" [innerText]="'false'"></div>
-                </div> -->
+                    <div id="mission-value" class="value-style" [innerText]="program?.rocket?.first_stage?.cores[0].land_success ? '&nbsp;&nbsp;&nbsp;Yes' : '&nbsp;&nbsp;&nbsp;No'"></div>
+                </div>
             </div>
         </li>
     </ul>
