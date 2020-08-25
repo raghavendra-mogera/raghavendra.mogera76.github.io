@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "git-user-b19a9"
+    "default": "git-user-b19a9",
+    "staging": "spacex-program-6a625"
   }
 }
