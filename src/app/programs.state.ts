@@ -1,8 +1,8 @@
-export default class userState{
-    Programs:any[];
-    ProgramError: Error
+export default class UserState {
+  Programs: any[];
+  ProgramError: Error;
 }
 
-export const initializeState = (): userState => {
-    return { Programs: <any>[], ProgramError:null}
-}
+export const initializeState = (): UserState => {
+  return { Programs: [], ProgramError: null };
+};

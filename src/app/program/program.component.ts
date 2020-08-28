@@ -6,7 +6,6 @@
  * Written By Raghavendra.
  */
 
-
 import { Component, OnInit } from '@angular/core';
 import { select, Store } from '@ngrx/store';
 import { Observable, Subscription } from 'rxjs';
@@ -20,7 +19,6 @@ import ProgramState from '../programs.state';
   styleUrls: ['./program.component.scss'],
 })
 export class ProgramComponent implements OnInit {
-
   program$: Observable<ProgramState>;
   programSubscription: Subscription;
   programs: any[] = [];
@@ -28,12 +26,12 @@ export class ProgramComponent implements OnInit {
   query = [];
 
   constructor(private store: Store<{ programs: ProgramState }>) {
-    //retrieve data from store
+    // retrieve data from store
     this.program$ = store.pipe(select('programs'));
   }
 
   ngOnInit(): void {
-    //subscribe the latest state
+    // subscribe the latest state
     this.programSubscription = this.program$
       .pipe(
         map((x) => {
@@ -44,6 +42,10 @@ export class ProgramComponent implements OnInit {
       )
       .subscribe();
     // Dispatch for updated program from server
-    this.store.dispatch(ProgramActions.BeginGetProgramAction({ query: {type: 'All', value:''} }));
+    this.store.dispatch(
+      ProgramActions.BeginGetProgramAction({
+        query: { type: 'All', value: '' },
+      })
+    );
   }
 }

@@ -12,6 +12,8 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 
 import { environment } from '../../environments/environment';
 
+
+
 @Injectable({
   providedIn: 'root',
 })
@@ -41,16 +43,16 @@ export class SpacexService {
   getFilters = () => {
     const arr = [];
     let start = 2006;
-    let end = new Date().getFullYear();
+    const end = new Date().getFullYear();
     while (start <= end) {
       arr.push(start);
       start++;
     }
     this.filters[0].value = [...arr];
     return this.filters;
-  };
+  }
 
-  getPrograms(query) {
+  getPrograms = (query) => {
     switch (query.type) {
       case 'Launch':
         return this.getLaunchedPrograms(query.value);
